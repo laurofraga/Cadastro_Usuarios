@@ -1,0 +1,21 @@
+{%extends 'usuarios/base.html'%} 
+{% block conteudo %}
+        <form action="{% url 'listagem_usuarios' %}" method="post">
+          {% csrf_token %}
+            <label  for='Nome'>Nome: </label>
+            <input name="Nome" class="form-control-sm" type="text">
+
+            <label  for="date"> Data de nascimento: </label> 
+            <input name="date" class="form-control-sm" type="date">
+
+            <label for="Sex"> Sexo:</label>
+            <select name="Sex" class="form-control-sm" id="sexo" name="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <laber for="email">E-mail
+            <input name="email" class="form-control-sm" type="email">
+            <button class="form-control-sm">Enviar</button>
+        </form>
+{% endblock %}
