@@ -1,0 +1,1 @@
+Aplicação web de castro de usuários utilizando Django, foi utilizando o ORM do Django para definir o modelo de dados , que representam os usuários e suas informações. Foram utilizadas também as bibliotecas padrão do Django para criar os formulários de entrada e exibir as informações .
